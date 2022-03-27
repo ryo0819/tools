@@ -1,0 +1,3 @@
+PyAutoGUI
+Pillow
+opencv-python
