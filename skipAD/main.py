@@ -19,5 +19,5 @@ while True:
             pag.click(x / 2, y / 2)
     except KeyboardInterrupt:
         exit("強制終了しました。(正常)")
-    except:
-        pass
+    except Exception():
+        exit("強制終了しました。(異常)")
