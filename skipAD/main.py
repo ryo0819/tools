@@ -18,4 +18,6 @@ while True:
             # x,yともに2で割らないと正しい座標をクリックできない(mac環境だけらしい)
             pag.click(x / 2, y / 2)
     except KeyboardInterrupt:
-        exit("ツール終了")
+        exit("強制終了しました。(正常)")
+    except:
+        continue
