@@ -1,4 +1,5 @@
 import pyautogui as pag
+import time
 
 ad_png_path = "ad1.png"
 
@@ -16,8 +17,9 @@ while True:
             icon_loc = pag.locateOnScreen(ad_png_path, confidence=0.8)
             x, y = pag.center(icon_loc)
             # x,yともに2で割らないと正しい座標をクリックできない(mac環境だけらしい)
-            pag.click(x / 2, y / 2)
+            pag.click(x/2, y/2)
     except KeyboardInterrupt:
         exit("強制終了しました。(正常)")
-    except:
+    except pag.ImageNotFoundException:
+        time.sleep(1)
         continue
