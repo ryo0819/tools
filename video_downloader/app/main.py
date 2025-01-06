@@ -18,7 +18,7 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/yt_download")
+@app.post("/yt_download")
 def download_yt_video(jsonbody: get_yt):
     try:
         download_link = jsonbody.url
