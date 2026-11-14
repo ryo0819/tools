@@ -8,7 +8,7 @@
 ## 使用方法
 1. 以下でパッケージをモジュールをインストール
 ```sh
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 
 2. PyAutoGUIで画像認識してもらいたいものをスクショなどで同ディレクトリに保存する
